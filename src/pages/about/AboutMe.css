@@ -1,0 +1,129 @@
+.AboutMe {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutMeContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+}
+
+.devId {
+    width: 35%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255, 0);
+    box-shadow: -4px 4px 8px 3px white;
+    border-radius: 5px;
+}
+
+.idPicContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin: 20px;
+}
+
+.idPicture {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.idName {
+    font-family: var(--title-font);
+    color: #FBFBEF;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.titleJobContainer {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.titleJob {
+    font-family: var(--title-font);
+    color: #FBFBEF;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.stackJob {
+    font-family: var(--title-font);
+    color: #FBFBEF;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 389px) {
+    .devId {
+        width: 65%;
+        height: 75%;
+    }
+    
+    .idPicContainer {
+        width: 175px;
+        height: 175px;
+    }
+    
+    .idName {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    .devId {
+        width: 65%;
+        height: 45%;
+        box-shadow: -3px 3px 5px 2px white;
+    }
+    
+    .idPicContainer {
+        width: 125px;
+        height: 125px;
+        margin: 20px;
+    }
+    
+    .idName {
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .titleJob {
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .stackJob {
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
