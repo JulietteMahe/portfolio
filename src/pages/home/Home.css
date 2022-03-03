@@ -7,6 +7,25 @@
 .homeContainer {
     width: 100%;
     height: 100%;
-    background-color: #485461;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #28313b;
     background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+}
+
+.comeInBtn {
+    font-family: var(--title-font);
+    font-size: 20px;
+    color: #28313b;
+    background-color: white;
+    width: 200px;
+    height: 80px;
+    border: none;
+}
+
+.comeInBtn:hover {
+    background-color: white;
+    box-shadow: 0 0 5px #fffde7, 0 0 25px #fffde7, 0 0 50px #fffde7, 0 0 200px #fffde7;
 }
