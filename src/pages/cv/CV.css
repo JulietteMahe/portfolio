@@ -1,12 +1,21 @@
 .CV {
     width: 100%;
     height: 90vh;
-    
 }
 
 .cvContainer {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     background-color: #485461;
     background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+}
+
+.cvPicture {
+    width: auto;
+    height: 80%;
+
 }

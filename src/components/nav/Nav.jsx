@@ -5,7 +5,7 @@ import './Nav.css';
 function Nav() {
   return (
       <div className="Nav">
-           <div className="Nav" className="navContainer">
+           <div className="navContainer">
                 <NavLink to="/" className="navLink">
                     Accueil
                 </NavLink>

@@ -20,7 +20,7 @@
 
 .devId {
     width: 35%;
-    height: 60%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,6 +29,19 @@
     box-shadow: -4px 4px 8px 3px white;
     border-radius: 5px;
 }
+
+.devId:hover {
+    width: 35%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255, 0);
+    box-shadow: 0 0 5px #fffde7, 0 0 25px #fffde7, 0 0 50px #fffde7, 0 0 200px #fffde7;
+    border-radius: 5px;
+}
+
 
 .idPicContainer {
     display: flex;
@@ -47,6 +60,13 @@
     border-radius: 50%;
     object-fit: cover;
     object-position: 50% 50%;
+}
+
+.idInfos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .idName {
@@ -98,14 +118,14 @@
 
 @media screen and (min-width: 390px) and (max-width: 767px) {
     .devId {
-        width: 65%;
-        height: 45%;
+        width: 80%;
+        height: 75%;
         box-shadow: -3px 3px 5px 2px white;
     }
     
     .idPicContainer {
-        width: 125px;
-        height: 125px;
+        width: 175px;
+        height: 175px;
         margin: 20px;
     }
     
@@ -127,3 +147,4 @@
         margin-bottom: 10px;
     }
 }
+

@@ -1,9 +1,12 @@
+import cv from "./resume.png";
 import './CV.css';
 
 function CV() {
   return (
     <div className="CV">
-     <div className="cvContainer">Here is my resume</div>
+     <div className="cvContainer">
+       <img src={cv} alt="cv" className="cvPicture"></img>
+     </div>
     </div>
   );
 }
