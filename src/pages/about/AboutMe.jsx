@@ -7,7 +7,7 @@ function AboutMe() {
       <div className="aboutMeContainer">
         <div className="devId">
           <div className="idPicContainer">
-            <img src={me} className="idPicture"></img>
+            <img src={me} className="idPicture" alt="my-photograph"></img>
           </div>
           <div className="idInfos">
           <div className="idNameContainer">

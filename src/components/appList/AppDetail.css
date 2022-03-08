@@ -1,0 +1,25 @@
+.AppDetail {
+    width: 65%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.mainImg {
+    width: 80%;
+    height: 30%;
+}
+
+.otherImg {
+    width: 80%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}

@@ -1,4 +1,4 @@
-window.onload = function () {
+/*window.onload = function () {
     //functions definition
   
     //class definition
@@ -216,4 +216,4 @@ window.onload = function () {
     //animation runner
     loop();
     setInterval(loop, 1000 / 60);
-  };
+  };*/
