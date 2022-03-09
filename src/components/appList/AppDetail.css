@@ -1,25 +1,97 @@
 .AppDetail {
-    width: 65%;
+    width: 90%;
     height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    background-color: #485461;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+    object-fit: contain;
+    
+}
+
+.photoBox {
+    width: 90%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+}
+
+.mainImgContainer {
+    width: 90%;
+    height: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: white;
-    border-radius: 5px;
+    object-fit: contain;
     margin: 20px;
+    margin-top: 81px;
 }
 
 .mainImg {
-    width: 80%;
-    height: 30%;
+    width: 100%;
+    height: auto;
 }
 
 .otherImg {
-    width: 80%;
-    height: 30%;
+    width: 70%;
+    height: 20%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    object-fit: contain;
+}
+
+.app-secondary-img {
+    height: auto;
+    max-width: 40%;
+    object-fit: contain; 
+    margin: 10px;
+}
+
+.text-content {
+    width: 65%;
+    height: 38%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: left;
+}
+
+.app-name {
+    font-family: var(--text-font);
+    color: #FBFBEF;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.app-text {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: justified;
+    text-align: justify;
+    font-family: var(--text-font);
+    color: #FBFBEF;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.app-description {
+  margin: 5px;
+}
+
+.app-client {
+    margin: 5px;
+}
+
+.app-stack {
+    margin: 5px;
 }
