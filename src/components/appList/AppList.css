@@ -12,15 +12,19 @@
     font-size: 13px;
 }
 
+.AppToDo {
+    color: var(--main-color-text);
+    margin: 10px;
+    font-family: var(--text-font);
+}
+
 .AppContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
-    margin-top: 100px;
-    object-fit: contain;
+    height: 90%;
 }
 /*.carouselList {
     width: 50%;
@@ -31,9 +35,7 @@
     justify-content: center;
     background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
 }
-
 .rec-carousel-wrapper{
     width: 60%;
     margin: 20px auto;
 }*/
-

@@ -24,9 +24,8 @@ const [appList, setAppList] = useState([]);
     
     return (
         <div className="AppList">
-            <div>Cliquez sur les images et icônes pour en découvrir plus</div>
-            <div class="AppContainer">
-            
+            <div className="AppToDo">Cliquez sur les images et icônes pour en découvrir plus</div>
+            <div class="AppContainer">            
             {appList
                 .map((app, index) => {
                     return (
