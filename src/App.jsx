@@ -7,6 +7,7 @@ import CV from './pages/cv/CV';
 import Contact from './pages/contact/Contact';
 import Nav from './components/nav/Nav';
 import './App.css';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function App() {
   return (

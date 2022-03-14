@@ -28,12 +28,12 @@ const AppDetail = (props) => {
                 </div> 
             </div>              
             <div className="secondBox">
-            <a href={props.netlify}>
-                <img className="app-secondary-img" src={props.globalpic2} alt={props.name} />
-                <img className="app-secondary-img" src={props.globalpic3} alt={props.name} />
-                <img className="app-secondary-img" src={props.globalpic4} alt={props.name} />
-                <img className="app-secondary-img" src={props.globalpic5} alt={props.name} />
-            </a>
+                <a href={props.netlify}>
+                   <img className="app-secondary-img" src={props.globalpic2} alt={props.name} />
+                   <img className="app-secondary-img" src={props.globalpic3} alt={props.name} />
+                   <img className="app-secondary-img" src={props.globalpic4} alt={props.name} />
+                   <img className="app-secondary-img" src={props.globalpic5} alt={props.name} />
+                </a>
             </div> 
         </div>
     )
