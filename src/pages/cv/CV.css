@@ -10,7 +10,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: #485461;
+    background-color: var(--main-color-background);
     background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
 }
 

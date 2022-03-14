@@ -7,10 +7,9 @@
 }
 
 :root {
-    --main-color-general-background: #FFFFFF;  
-    --main-color-dark-background: #093046;
-    --main-color-light-background: #f9b513;
-
+    --main-color-background: #485461;
+    --darker-color-background: #28313b;
+    --main-color-text: #FBFBEF;
     --text-font: 'Roboto Mono', monospace;
 };
 

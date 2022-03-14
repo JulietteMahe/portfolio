@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #485461;
+    background-color: var(--main-color-background);
     border-radius: 5px;
     margin: 20px;
     padding: 10px;
@@ -12,7 +12,7 @@
 }
 
 .AppDetail:hover {
-    box-shadow: -4px 4px 8px 3px white;
+    box-shadow: -4px 4px 8px 3px var(--main-color-text);
     border-radius: 5px; 
 }
 
@@ -76,7 +76,7 @@
 
 .app-name {
     font-family: var(--text-font);
-    color: #FBFBEF;
+    color: var(--main-color-text);
     font-size: 16px;
     margin: 10px;
     margin-top: 50px;
@@ -95,7 +95,7 @@
     justify-content: justified;
     text-align: justify;
     font-family: var(--text-font);
-    color: #FBFBEF;
+    color: var(--main-color-text);
     font-size: 12px;
     margin-left: 20px;
     margin-right: 20px;

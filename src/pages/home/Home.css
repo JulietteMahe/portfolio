@@ -10,21 +10,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #28313b;
+    background-color: var(--darker-color-background);
     background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
 }
 
 .comeInBtn {
     font-family: var(--title-font);
     font-size: 20px;
-    color: #28313b;
-    background-color: white;
+    color: var(--darker-color-background);
+    background-color: var(--main-color-text);
     width: 200px;
     height: 80px;
     border: none;
 }
 
 .comeInBtn:hover {
-    background-color: white;
+    background-color: var(--main-color-text);
     box-shadow: 0 0 5px #fffde7, 0 0 25px #fffde7, 0 0 50px #fffde7, 0 0 200px #fffde7;
 }
