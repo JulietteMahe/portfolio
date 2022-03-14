@@ -8,8 +8,7 @@
     border-radius: 5px;
     margin: 20px;
     padding: 10px;
-    object-fit: contain;
-    
+    object-fit: contain;    
 }
 
 .firstBox {
@@ -64,6 +63,12 @@
     justify-content: left;
 }
 
+.cardTitle {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
 .app-name {
     font-family: var(--text-font);
     color: #FBFBEF;
@@ -72,6 +77,12 @@
     margin-top: 50px;
 }
 
+.githubLogo {
+    height: 15px;
+    width: 15px;
+    margin-left: 20px;
+    margin-top: 55px;
+}
 .app-text {
     width: 80%;
     display: flex;

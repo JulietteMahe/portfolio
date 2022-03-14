@@ -13,12 +13,12 @@ const [appList, setAppList] = useState([]);
             //     .get(`https://api.jsonbin.io/b/621a0012c4790b3406241a82/?userid=${props.id}`)
             // Change this due to API switch
             Axios
-                .get(`https://api.jsonbin.io/b/62279548a703bb674925632c/5`)
+                .get(`https://api.jsonbin.io/b/62279548a703bb674925632c/8`)
                 .then(response => setAppList(response.data.filter(item => item.id === parseInt(props.id))))
                 .catch(error => console.log(`API (app) call error: ${error}`))
         } else {
             Axios
-                .get("https://api.jsonbin.io/b/62279548a703bb674925632c/5")
+                .get("https://api.jsonbin.io/b/62279548a703bb674925632c/8")
                 .then((response) => setAppList(response.data))
                 .catch(error => console.log(`API (app) call error: ${error}`))
         }
@@ -28,13 +28,16 @@ const [appList, setAppList] = useState([]);
     
     return (
         <div className="AppList">
-            
+            <div>Cliquez sur les images et icônes pour en découvrir plus</div>
+            <div className="AppContainer">            
             {appList
                 .map((app, index) => {
                     return (
                         <AppDetail 
                         key={index} 
                         name={app.name} 
+                        github={app.github}
+                        netlify={app.netlify}
                         globalpic1={app.globalpic1} 
                         globalpic2={app.globalpic2} 
                         globalpic3={app.globalpic3} 
@@ -42,12 +45,13 @@ const [appList, setAppList] = useState([]);
                         globalpic5={app.globalpic5} 
                         description={app.description} 
                         clienttype={app.clienttype}  
+                        teamtype={app.teamtype}
                         stack={app.stack}
                         cardStyle={position}                       
                         />
                     )
                 })}
-            
+            </div>
         </div>
     )
 }
