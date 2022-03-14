@@ -19,6 +19,17 @@ function AboutMe() {
           </div>
           </div>
         </div>
+        <div className="devStory">
+          <div className="idInfos">
+          <div className="idNameContainer">
+            <p className="idName">ici le texte</p>
+          </div>
+          <div className="titleJobContainer">
+            <p className="titleJob">Développeur Web junior</p>
+            <p className="stackJob">ReactJS NodeJS</p>
+          </div>
+          </div>
+        </div>
       </div>
     </div>
   );

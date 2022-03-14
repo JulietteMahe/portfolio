@@ -15,7 +15,7 @@ const AppDetail = (props) => {
                     <div className='app-text'>
                        <p className='app-description'>{props.description}</p>
                        <p className='app-client'>Réalisé pour un client {props.clienttype}.</p>  
-                       <p className='app-stack'>Ici la stack techno </p>
+                       <p className='app-stack'>Stack utilisée {props.stack}</p>
                     </div>
                 </div> 
             </div>              
