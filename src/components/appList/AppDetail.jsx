@@ -28,11 +28,15 @@ const AppDetail = (props) => {
                 </div> 
             </div>              
             <div className="secondBox">
-                <a href={props.netlify}>
-                   <img className="app-secondary-img" src={props.globalpic2} alt={props.name} />
-                   <img className="app-secondary-img" src={props.globalpic3} alt={props.name} />
-                   <img className="app-secondary-img" src={props.globalpic4} alt={props.name} />
-                   <img className="app-secondary-img" src={props.globalpic5} alt={props.name} />
+                <a href={props.netlify} className="underBox">
+                    <div className="topRow">
+                       <img className="app-secondary-img" src={props.globalpic2} alt={props.name} />                   
+                       <img className="app-secondary-img" src={props.globalpic3} alt={props.name} />                   
+                    </div>
+                    <div className="bottomRow">
+                       <img className="app-secondary-img" src={props.globalpic4} alt={props.name} />
+                       <img className="app-secondary-img" src={props.globalpic5} alt={props.name} />
+                    </div>
                 </a>
             </div> 
         </div>

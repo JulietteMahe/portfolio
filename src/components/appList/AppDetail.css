@@ -7,6 +7,7 @@
     background-color: var(--main-color-background);
     border-radius: 5px;
     margin: 25px;
+    margin-bottom: 40px;;
     padding: 15px;
     object-fit: contain;   
 }
@@ -42,10 +43,9 @@
 }
 
 .secondBox {
-    width: 40%;
+    width: 35%;
     height: 100%;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -53,9 +53,37 @@
     padding-top: 25px;
 }
 
+.underBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+}
+
+.topRow {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bottomRow {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .app-secondary-img {
     height: auto;
-    max-width: 40%;
+    max-width: 25%;
     object-fit: contain; 
     margin: 10px;
 }
@@ -85,8 +113,8 @@
 }
 
 .githubLogo {
-    height: 15px;
-    width: 15px;
+    max-height: 15px;
+    max-width: 15px;
     margin-left: 20px;
     margin-top: 15px;
 }
@@ -112,4 +140,201 @@
 
 .app-stack {
     margin: 5px;
+}
+
+@media screen and (max-width: 390px) {
+    .AppDetail {
+        width: 75vw;
+        height: 75vh;
+        flex-direction: column;
+        margin-top: 25px;
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+    }
+
+    .firstBox {
+        width: 100%;
+        height: 70%;
+        padding-top: 10px;
+    }
+
+    .mainImgContainer {
+        width: 90%;
+        height: auto;
+        margin: 10px;
+    }
+
+    .secondBox {
+        width: 100%;
+        padding-top: 0px;
+    }
+    
+    .underBox {
+        flex-direction: row;
+    }
+
+    .topRow {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: right;
+        margin: 0px;
+    }
+    
+    .bottomRow {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        margin: 0px;
+    }
+
+    .app-secondary-img {
+        height: auto;
+        max-width: 40%;
+        margin: 5px;
+    }
+
+    .app-name {
+        font-size: 16px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .githubLogo {
+        max-height: 20px;
+        max-width: 20px;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+    
+    .app-text {
+        width: 100%;
+        font-size: 12px;
+        margin: 12px;
+    }
+}
+
+@media screen and (min-width: 391px) and (max-width: 767px) {
+    .AppDetail {
+        width: 75vw;
+        height: 75vh;
+        flex-direction: column;
+        margin-top: 25px;
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+    }
+
+    .firstBox {
+        width: 100%;
+        height: 75%;
+        padding-top: 10px;
+    }
+
+    .secondBox {
+        width: 100%;
+        padding-top: 0px;
+    }
+    
+    .underBox {
+        flex-direction: row;
+    }
+
+    .topRow {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: right;
+        margin: 0px;
+    }
+    
+    .bottomRow {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        margin: 0px;
+    }
+
+    .app-secondary-img {
+        height: auto;
+        max-width: 40%;
+        margin: 10px;
+    }
+
+    .app-name {
+        font-size: 18px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .githubLogo {
+        max-height: 20px;
+        max-width: 20px;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+    
+    .app-text {
+        width: 100%;
+        font-size: 14px;
+        margin: 12px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .AppDetail {
+        width: 75vw;
+        height: 75vh;
+        flex-direction: column;
+        margin-top: 25px;
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+    }
+
+    .firstBox {
+        width: 100%;
+        height: 80%;
+        padding-top: 10px;
+    }
+
+    .secondBox {
+        width: 100%;
+        padding-top: 0px;
+    }
+    
+    .underBox {
+        flex-direction: row;
+    }
+
+    .app-secondary-img {
+        height: auto;
+        max-width: 40%;
+    }
+
+    .app-name {
+        font-size: 18px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .githubLogo {
+        max-height: 20px;
+        max-width: 20px;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+    
+    .app-text {
+        width: 100%;
+        font-size: 14px;
+        margin: 15px;
+    }
 }
