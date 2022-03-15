@@ -7,10 +7,10 @@ function Nav() {
       <div className="Nav">
            <div className="navContainer">
                 <NavLink to="/" className="navLink">
-                    Accueil
+                    Home
                 </NavLink>
                 <NavLink to="/about-me" className="navLink">
-                    A propos de moi
+                    About me
                 </NavLink>
                 <NavLink to="/work" className="navLink">
                     Work
@@ -19,7 +19,7 @@ function Nav() {
                     CV
                 </NavLink>
                 <NavLink to="/contact" className="navLink">
-                    Contactez-moi!
+                    Contact me!
                 </NavLink>
             </div>
     </div>

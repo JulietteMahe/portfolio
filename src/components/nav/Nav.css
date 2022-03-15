@@ -35,7 +35,13 @@
     text-decoration: none;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 374px) {
+    .navLink {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 390px) {
     .navLink {
         font-size: 11px;
     }
