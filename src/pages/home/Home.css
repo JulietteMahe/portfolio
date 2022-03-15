@@ -22,9 +22,11 @@
     width: 200px;
     height: 80px;
     border: none;
+    border-radius: 2px;
 }
 
 .comeInBtn:hover {
     background-color: var(--main-color-text);
     box-shadow: 0 0 5px #fffde7, 0 0 25px #fffde7, 0 0 50px #fffde7, 0 0 200px #fffde7;
+    border-radius: 2px;
 }

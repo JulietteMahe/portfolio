@@ -121,6 +121,7 @@
 .storyText {
     margin-bottom: 15px;
 }
+
 .titleJobContainer {
     display: flex;
     flex-direction: column; 
@@ -144,29 +145,12 @@
     margin-bottom: 15px;
 }
 
-@media screen and (max-width: 389px) {
-    .devId {
-        width: 65%;
-        height: 75%;
-    }
-    
-    .idPicContainer {
-        width: 175px;
-        height: 175px;
-    }
-    
-    .idName {
-        margin-bottom: 15px;
-    }
-}
-
-@media screen and (min-width: 390px) and (max-width: 767px) {
-    .devId {
+@media screen and (max-width: 390px) {
+    .flipCard {
         width: 80%;
-        height: 75%;
-        box-shadow: -3px 3px 5px 2px var(--main-color-text);
+        height: 80%;
     }
-    
+
     .idPicContainer {
         width: 175px;
         height: 175px;
@@ -186,9 +170,67 @@
     }
     
     .stackJob {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .storyInfos {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 391px) and (max-width: 767px){
+    .flipCard {
+        width: 80%;
+        height: 80%;
+    }
+
+    .idPicContainer {
+        width: 175px;
+        height: 175px;
+        margin: 20px;
+    }
+    
+    .idName {
         font-size: 14px;
         margin-top: 10px;
         margin-bottom: 10px;
     }
+    
+    .titleJob {
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .stackJob {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .storyInfos {
+        font-size: 14px;
+    }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .flipCard {
+        width: 80%;
+        height: 80%;
+    }    
+    .storyInfos {
+        font-size: 16px;
+        margin: 25px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1180px){
+    .flipCard {
+        width: 80%;
+        height: 80%;
+    }    
+    .storyInfos {
+        font-size: 16px;
+        margin: 25px;
+    }
+}

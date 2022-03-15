@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import Axios from "axios";
-import AppDetail from './AppDetail';
-import './AppList.css';
+import React from "react";
+import { Carousel } from 'react-responsive-carousel';
 
-const AppList = (props) => {
-const [appList, setAppList] = useState([]);
+export default function CarouselComponent(props) {
+    const [appList, setAppList] = useState([]);
 
     useEffect(() => {
         if (props.id) {
@@ -19,13 +17,10 @@ const [appList, setAppList] = useState([]);
                 .catch(error => console.log(`API (app) call error: ${error}`))
         }
     }, [props.id])
-
-    let position = 0;
     
     return (
-        <div className="AppList">
-            <div className="AppToDo">Cliquez sur les images et icônes pour en découvrir plus</div>
-            <div class="AppContainer">            
+        <div class="carousel-wrapper">
+            <Carousel useKeyboardArrows>
             {appList
                 .map((app, index) => {
                     return (
@@ -47,13 +42,7 @@ const [appList, setAppList] = useState([]);
                         />
                     )
                 })}
-            
-            </div>
+            </Carousel>
         </div>
-    )
+    );
 }
-
-export default AppList;
-
-/*<Carousel className="carouselList" itemsToShow={1}>
-</Carousel>*/
