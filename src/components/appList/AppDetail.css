@@ -34,7 +34,7 @@
     align-items: center;
     justify-content: center;
     object-fit: contain;
-    margin: 20px;
+    margin: 10px;
 }
 
 .mainImg {
@@ -339,14 +339,14 @@
     }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1349px) {
+@media screen and (min-width: 1024px) and (max-width: 1350px) {
     .AppDetail {
         width: 75vw;
-        height: 80vh;
+        height: 85vh;
         flex-direction: column;
         margin-top: 25px;
         margin-bottom: 40px;
-        padding-bottom: 20px;
+        padding-bottom: 0px;
     }
 
     .firstBox {
@@ -368,12 +368,12 @@
         align-items: center;
         justify-content: center;
         object-fit: contain;
-        margin: 10px;
+        margin: 0px;
     }
     
     .mainImg {
-        width: 100%;
-        height: auto;
+        width: auto;
+        height: 50%;
     }
 }
 
