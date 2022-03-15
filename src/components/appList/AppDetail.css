@@ -43,7 +43,7 @@
 }
 
 .secondBox {
-    width: 35%;
+    width: 40%;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -83,7 +83,7 @@
 
 .app-secondary-img {
     height: auto;
-    max-width: 25%;
+    max-width: 35%;
     object-fit: contain; 
     margin: 10px;
 }
