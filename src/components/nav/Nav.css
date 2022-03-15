@@ -34,19 +34,16 @@
     font-family: var(--text-font);
     text-decoration: none;
 }
-@media screen and (max-width: 389px) {
+
+@media screen and (max-width: 390px) {
+    .navLink {
+        font-size: 11px;
+    }
+}
+
+@media screen and (min-width: 391px) and (max-width: 767px){
     .navLink {
         font-size: 12px;
     }
 }
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
-    .navContainer {
-        width: 90%;
-        margin-left: 20px;
-    }
-
-    .navLink {
-        font-size: 12px;
-    }
-}

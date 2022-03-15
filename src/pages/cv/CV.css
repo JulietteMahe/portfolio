@@ -1,11 +1,6 @@
 .CV {
     width: 100%;
-    height: 90vh;
-}
-
-.cvContainer {
-    width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -15,7 +10,31 @@
 }
 
 .cvPicture {
+    max-height: 80%;
     width: auto;
-    height: 80%;
+    margin-bottom: 30px;
+}
 
+@media screen and (max-width: 390px) {
+    .cvPicture {
+        height: auto;
+        width: 85%;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 391px) and (max-width: 767px){
+    .cvPicture {
+        height: auto;
+        width: 90%;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .cvPicture {
+        max-height: 80%;
+        width: auto;
+        margin-bottom: 20px;
+    }
 }
