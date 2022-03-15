@@ -11,6 +11,7 @@
     color: var(--main-color-text);
     font-size: 13px;
     padding-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .AppToDo {
@@ -27,6 +28,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 100%;
 }
 
 @media screen and (max-width: 390px) {
@@ -53,9 +55,6 @@
     }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1350px){
-    .AppToDo {
-        font-size: 12px;
-        margin-top: 0px;
-    }
+@media screen and (min-width: 1024px) and (max-width: 1350px) {
+    
 }

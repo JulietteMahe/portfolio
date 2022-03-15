@@ -34,7 +34,7 @@
     align-items: center;
     justify-content: center;
     object-fit: contain;
-    margin: 10px;
+    margin: 20px;
 }
 
 .mainImg {
@@ -340,40 +340,17 @@
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1350px) {
-    .AppDetail {
-        width: 75vw;
-        height: 85vh;
-        flex-direction: column;
-        margin-top: 25px;
-        margin-bottom: 40px;
-        padding-bottom: 0px;
-    }
-
     .firstBox {
-        width: 50%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-top: 0px;
-        margin-top: 0px;
+        padding-top: 5px;
     }
 
     .mainImgContainer {
-        width: auto;
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        object-fit: contain;
-        margin: 0px;
+        width: 70%;
+        margin: 5px;
     }
-    
-    .mainImg {
-        width: auto;
-        height: 50%;
+
+    .secondBox {
+        width: 35%;
+        padding-top: 5px;
     }
 }
-
