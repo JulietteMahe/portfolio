@@ -82,8 +82,8 @@
 }
 
 .app-secondary-img {
-    height: auto;
-    max-width: 35%;
+    height: 85%;
+    width: auto;    
     object-fit: contain; 
     margin: 10px;
 }
@@ -338,3 +338,4 @@
         margin: 15px;
     }
 }
+
