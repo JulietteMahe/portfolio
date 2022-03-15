@@ -21,14 +21,14 @@
 }
 
 .navLink {
-    color: white;
+    color: var(--main-color-text);
     margin: 10px;
     font-family: var(--text-font);
     text-decoration: none;
 }
 
 .navLink:hover {
-    color: white;
+    color: var(--main-color-text);
     text-shadow: 0 0 5px #fffde7, 0 0 25px #fffde7, 0 0 50px #fffde7, 0 0 200px #fffde7;
     margin: 10px;
     font-family: var(--text-font);

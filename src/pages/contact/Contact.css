@@ -16,28 +16,57 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family: var(--text-font);
+    color: var(--main-color-text);
     background-color: rgba(255,255,255, 0);
     box-shadow: -4px 4px 8px 3px var(--main-color-text);
     border-radius: 5px;
     margin-bottom: 50px;
 }
 
-.contactButton {
-    width: 200px;
+.contactText {
+    font-family: var(--text-font);
+    color: var(--main-color-text);
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.linkedinButton {
+    width: 300px;
     height: 80px;
     display: flex;
     flex-direction: column; 
     align-items: center;
     justify-content: center;
+    margin: 40px;
     background-color: var(--main-color-text);
-    font-family: var(--title-font);
-    font-size: 20px;
+    font-family: var(--text-font);
+    font-size: 14px;
     color: var(--darker-color-background);
     border: none;
     text-decoration: none;
+    border-radius: 2px;
+    object-fit: contain;
 }
 
-.contactButton:hover {
+.linkedinLink {
+    width: 255px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: var(--darker-color-background);
+    padding-top: 33px;
+}
+
+.linkedinLink:hover {
     background-color: var(--main-color-text);
     box-shadow: 0 0 5px #fffde7, 0 0 25px #fffde7, 0 0 50px #fffde7, 0 0 200px #fffde7;
+}
+
+.linkedinLogo {
+    height: 20px;
+    width: auto;
+    margin-left: 10px;
 }

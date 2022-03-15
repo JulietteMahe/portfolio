@@ -1,3 +1,26 @@
 .mailtoButton {
+    width: 300px;
+    height: 80px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color-text);
+    font-family: var(--text-font);
+    font-size: 14px;
+    color: var(--darker-color-background);
+    border: none;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.mailtoButton:hover {
+    background-color: var(--main-color-text);
+    box-shadow: 0 0 5px #fffde7, 0 0 25px #fffde7, 0 0 50px #fffde7, 0 0 200px #fffde7;
+}
+
+.mailtoLink {
+    font-family: var(--title-font);
+    color: var(--darker-color-background);
     text-decoration: none;
 }
