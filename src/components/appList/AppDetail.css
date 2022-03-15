@@ -339,3 +339,41 @@
     }
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1349px) {
+    .AppDetail {
+        width: 75vw;
+        height: 80vh;
+        flex-direction: column;
+        margin-top: 25px;
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+    }
+
+    .firstBox {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+
+    .mainImgContainer {
+        width: auto;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        object-fit: contain;
+        margin: 10px;
+    }
+    
+    .mainImg {
+        width: 100%;
+        height: auto;
+    }
+}
+
