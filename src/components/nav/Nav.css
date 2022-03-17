@@ -53,3 +53,8 @@
     }
 }
 
+@media screen and (min-width: 1080px) and (max-width: 1179px) {
+    .navLink {
+        font-size: 30px;
+    }
+}
