@@ -9,12 +9,12 @@ const [appList, setAppList] = useState([]);
     useEffect(() => {
         if (props.id) {
             Axios
-                .get(`https://api.jsonbin.io/b/62279548a703bb674925632c/8`)
+                .get(`https://api.jsonbin.io/b/62279548a703bb674925632c/15`)
                 .then(response => setAppList(response.data.filter(item => item.id === parseInt(props.id))))
                 .catch(error => console.log(`API (app) call error: ${error}`))
         } else {
             Axios
-                .get("https://api.jsonbin.io/b/62279548a703bb674925632c/8")
+                .get("https://api.jsonbin.io/b/62279548a703bb674925632c/15")
                 .then((response) => setAppList(response.data))
                 .catch(error => console.log(`API (app) call error: ${error}`))
         }
