@@ -1,4 +1,4 @@
-import cv from "./resume.png";
+import cv from "./CV.png";
 import './CV.css';
 
 function CV() {
