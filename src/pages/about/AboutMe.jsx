@@ -6,7 +6,6 @@ function AboutMe() {
     <div className="AboutMe">
       <div className="flipCardContainer">
         <div className="flipCard">
-
           <div className="flipCardFront">
             <div className="idPicContainer">
               <img src={me} className="idPicture" alt="my-photograph"></img>
