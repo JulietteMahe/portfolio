@@ -40,7 +40,7 @@
   {
     "id": 3,
     "name": "RisQ",
-    "github": "https://github.com/JulietteMahe/hackathon",
+    "github": "https://github.com/JulietteMahe/risQ",
     "netlify": "",
     "globalpic1": "https://i.ibb.co/k4db6Dq/main.png",
     "globalpic2": "https://i.ibb.co/tB02Q0v/1.png",
