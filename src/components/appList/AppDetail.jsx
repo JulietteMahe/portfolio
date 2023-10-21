@@ -9,14 +9,14 @@ const AppDetail = (props) => {
         <div className="AppDetail">
             <div className="firstBox">
                 <div className="mainImgContainer">
-                    <a href={props.netlify}>
+                    <a className="mainImgA" href={props.netlify}>
                        <img className="mainImg" src={props.globalpic1} alt={props.name} />
                     </a>
                 </div>
                 <div className='text-content'>  
                     <div className='cardTitle'>
                        <p className='app-name'>{props.name}</p>
-                       <a href={props.github}>
+                       <a className="githubLogoA" href={props.github}>
                           <img className="githubLogo" src={Logo} alt="Github link"></img>
                        </a>
                     </div> 

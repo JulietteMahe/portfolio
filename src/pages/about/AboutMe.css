@@ -114,13 +114,23 @@
 .storyInfos {
     font-family: var(--text-font);
     color: var(--main-color-text);
-    font-size: 16px;
+    font-size: 10px;
     margin: 20px;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 .storyText {
-    margin-bottom: 15px;
+    /*margin-top: 40px;*/
+    margin-bottom: 0 px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .titleJobContainer {

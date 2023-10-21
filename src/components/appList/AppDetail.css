@@ -1,14 +1,16 @@
 .AppDetail {
     width: 70vw;
-    height: 78vh;
+    height: 80vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: var(--main-color-background);
+    align-items: center;
+    background-color: red;
+    /*background-color: var(--main-color-background);*/
     border-radius: 5px;
-    margin: 25px;
-    margin-bottom: 40px;;
-    padding: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 0.75rem;
     object-fit: contain;   
 }
 
@@ -17,30 +19,46 @@
     border-radius: 5px; 
 }
 
+.blankPadding {
+    height: 60px;
+    background-color: green;
+}
+
 .firstBox {
     width: 60%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 25px;
+    padding-top: 1rem;
+    background-color: blueviolet;
 }
 
 .mainImgContainer {
-    max-width: 80%;
-    height: 62%;
+    width: 100%;
+    height: 50%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
     object-fit: contain;
-    margin: 20px;
+    background-color: greenyellow;
+    margin: 0.5rem;
+}
+
+.mainImgA {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: aqua;
+    object-fit: contain;
+    
 }
 
 .mainImg {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
+    width: auto;
+    height: 100%;
 }
 
 .secondBox {
@@ -86,41 +104,52 @@
     height: 85%;
     width: auto;    
     object-fit: contain; 
-    margin: 10px;
+    margin: 0.5rem;
 }
 
 .text-content {
     width: 100%;
-    height: 50%;
+    height: 45%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: left;
+    background-color: pink;
 }
 
 .cardTitle {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 80%;
+    width: 100%;
+    height: 20%;
+    background-color: blue;
 }
 
 .app-name {
     font-family: var(--text-font);
     color: var(--main-color-text);
     font-size: 16px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin: 0.5rem;
+    height: 100%;
+    background-color: khaki;
+}
+
+.githubLogoA {
+    width: 100%;
+    height: 100%;
+    background-color: turquoise;
 }
 
 .githubLogo {
-    max-height: 15px;
-    max-width: 15px;
-    margin-left: 20px;
-    margin-top: 15px;
+    max-height: 0.75rem;
+    max-width: 0.75rem;
+    margin-left: 1rem;
+    margin-top: 0.75rem;
 }
 .app-text {
     width: 80%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: justified;
@@ -128,18 +157,27 @@
     font-family: var(--text-font);
     color: var(--main-color-text);
     font-size: 12px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    margin-right: 1rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: brown;
+    
 }
 .app-description {
-  margin: 5px;
+    background-color: fuchsia;
+    height: auto;
+    margin: 5px;
 }
 
 .app-client {
+    height: auto;
     margin: 5px;
 }
 
 .app-stack {
+    height: auto;
+    background-color: fuchsia;
     margin: 5px;
 }
 
@@ -150,21 +188,21 @@
         flex-direction: column;
         margin-top: 25px;
         margin-bottom: 40px;
-        padding-bottom: 20px;
+        padding-bottom: 1rem;
     }
 
     .firstBox {
         width: 100%;
         height: 70%;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
     }
 
     .mainImgContainer {
         width: 90%;
         height: auto;
-        margin: 10px;
+        margin: 0.5rem;
     }
 
     .secondBox {
@@ -205,17 +243,17 @@
     .app-name {
         font-size: 12px;
         margin-bottom: 5px;
-        margin-top: 10px;
+        margin-top: 0.5rem;
     }
 
     .githubLogo {
-        margin-left: 10px;
-        margin-top: 10px;
+        margin-left: 0.5rem;
+        margin-top: 0.5rem;
     }
     
     .app-text {
         width: 100%;
-        font-size: 10px;
+        font-size: 0.5rem;
         margin: 5px;
     }
 }
@@ -227,19 +265,19 @@
         flex-direction: column;
         margin-top: 25px;
         margin-bottom: 40px;
-        padding-bottom: 20px;
+        padding-bottom: 1rem;
     }
 
     .firstBox {
         width: 100%;
         height: 70%;
-        padding-top: 10px;
+        padding-top: 0.5rem;
     }
 
     .mainImgContainer {
         width: 90%;
         height: auto;
-        margin: 10px;
+        margin: 0.5rem;
     }
 
     .secondBox {
@@ -279,15 +317,15 @@
 
     .app-name {
         font-size: 16px;
-        margin-bottom: 10px;
-        margin-top: 10px;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
     }
 
     .githubLogo {
-        max-height: 20px;
-        max-width: 20px;
-        margin-left: 20px;
-        margin-top: 15px;
+        max-height: 1rem;
+        max-width: 1rem;
+        margin-left: 1rem;
+        margin-top: 0.75rem;
     }
     
     .app-text {
@@ -304,13 +342,13 @@
         flex-direction: column;
         margin-top: 25px;
         margin-bottom: 40px;
-        padding-bottom: 20px;
+        padding-bottom: 1rem;
     }
 
     .firstBox {
         width: 100%;
         height: 75%;
-        padding-top: 10px;
+        padding-top: 0.5rem;
     }
 
     .secondBox {
@@ -345,20 +383,20 @@
     .app-secondary-img {
         height: auto;
         max-width: 40%;
-        margin: 10px;
+        margin: 0.5rem;
     }
 
     .app-name {
         font-size: 18px;
-        margin-bottom: 10px;
-        margin-top: 10px;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
     }
 
     .githubLogo {
-        max-height: 20px;
-        max-width: 20px;
-        margin-left: 20px;
-        margin-top: 15px;
+        max-height: 1rem;
+        max-width: 1rem;
+        margin-left: 1rem;
+        margin-top: 0.75rem;
     }
     
     .app-text {
@@ -375,13 +413,13 @@
         flex-direction: column;
         margin-top: 25px;
         margin-bottom: 40px;
-        padding-bottom: 20px;
+        padding-bottom: 1rem;
     }
 
     .firstBox {
         width: 100%;
         height: 55%;
-        padding-top: 10px;
+        padding-top: 0.5rem;
     }
 
     .secondBox {
@@ -420,37 +458,37 @@
     .app-name {
         font-size: 16px;
         margin-bottom: 7px;
-        margin-top: 10px;
+        margin-top: 0.5rem;
     }
 
     .githubLogo {
-        max-height: 20px;
-        max-width: 20px;
-        margin-left: 20px;
-        margin-top: 15px;
+        max-height: 1rem;
+        max-width: 1rem;
+        margin-left: 1rem;
+        margin-top: 0.75rem;
     }
     
     .app-text {
         width: 100%;
-        font-size: 10px;
+        font-size: 0.5rem;
         margin: 7px;
     }
 }
 
-@media screen and (min-width: 720px) and (max-width: 1023px) {
+@media screen and (min-width: 71rem) and (max-width: 1023px) {
    .AppDetail {
         width: 75vw;
         height: 82vh;
         flex-direction: column;
         margin-top: 25px;
         margin-bottom: 40px;
-        padding-bottom: 20px;
+        padding-bottom: 1rem;
     }
 
     .firstBox {
         width: 100%;
         height: 80%;
-        padding-top: 10px;
+        padding-top: 0.5rem;
     }
 
     .secondBox {
@@ -469,21 +507,21 @@
 
     .app-name {
         font-size: 18px;
-        margin-bottom: 10px;
-        margin-top: 10px;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
     }
 
     .githubLogo {
-        max-height: 20px;
-        max-width: 20px;
-        margin-left: 20px;
-        margin-top: 15px;
+        max-height: 1rem;
+        max-width: 1rem;
+        margin-left: 1rem;
+        margin-top: 0.75rem;
     }
     
     .app-text {
         width: 100%;
         font-size: 14px;
-        margin: 15px;
+        margin: 0.75rem;
     }
 }
 
@@ -511,15 +549,15 @@
         justify-content: flex-start;
         margin-top: 40px;
         margin-bottom: 40px;
-        padding-bottom: 20px;
+        padding-bottom: 1rem;
     }
 
     .firstBox {
         width: 100%;
         height: 50%;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
     }
 
     .secondBox {
@@ -537,8 +575,8 @@
         align-items: center;
         justify-content: center;
         object-fit: contain;
-        margin: 20px;
-        padding-top: 20px;
+        margin: 1rem;
+        padding-top: 1rem;
     }
     
     .mainImg {
@@ -568,22 +606,22 @@
 
     .app-name {
         font-size: 28px;
-        margin-bottom: 10px;
-        margin-top: 10px;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
     }
 
     .githubLogo {
-        max-height: 20px;
-        max-width: 20px;
-        margin-left: 20px;
+        max-height: 1rem;
+        max-width: 1rem;
+        margin-left: 1rem;
         margin-top: 18px;
     }
     
     .app-text {
         width: 100%;
-        font-size: 20px;
-        margin: 15px;
-        margin-bottom: 20px;
+        font-size: 1rem;
+        margin: 0.75rem;
+        margin-bottom: 1rem;
     }
 }
 

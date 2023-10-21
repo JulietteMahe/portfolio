@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500&display=swap');
 
 * {
+    height: 100vh;
+    width: 100%;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    background-color: #485461;
+    /*background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);*/
 }
 
 :root {
