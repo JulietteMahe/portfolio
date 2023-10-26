@@ -63,7 +63,7 @@ const [appList, setAppList] = useState([]);
     "HTML ",
     "CSS "
     ]
-    }/*,
+    },
     {
     "id": 3,
     "name": "RisQ",
@@ -83,7 +83,7 @@ const [appList, setAppList] = useState([]);
     "HTML ",
     "CSS "
     ]
-    }*/
+    }
     ].map((app, index) => {
                     return (
                         <AppDetail 
@@ -102,6 +102,7 @@ const [appList, setAppList] = useState([]);
                         stack={app.stack}
                         cardStyle={position}                       
                         />
+                        
                     )
                 })}
             
@@ -112,6 +113,3 @@ const [appList, setAppList] = useState([]);
 }
 
 export default AppList;
-
-/*<Carousel className="carouselList" itemsToShow={1}>
-</Carousel>*/

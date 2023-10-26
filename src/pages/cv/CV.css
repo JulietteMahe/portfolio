@@ -17,16 +17,16 @@
 
 @media screen and (max-width: 390px) {
     .cvPicture {
-        height: auto;
-        width: 85%;
+        max-height: 80%;
+        width: auto;
         margin-bottom: 10px;
     }
 }
 
 @media screen and (min-width: 391px) and (max-width: 767px){
     .cvPicture {
-        height: auto;
-        width: 90%;
+        max-height: 80%;
+        width: auto;
         margin-bottom: 10px;
     }
 }

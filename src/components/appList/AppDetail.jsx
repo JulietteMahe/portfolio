@@ -16,6 +16,7 @@ const AppDetail = (props) => {
                 <div className='text-content'>  
                     <div className='cardTitle'>
                        <p className='app-name'>{props.name}</p>
+                       <p className ="voirCode">Voir le code -> </p>
                        <a className="githubLogoA" href={props.github}>
                           <img className="githubLogo" src={Logo} alt="Github link"></img>
                        </a>
@@ -23,7 +24,7 @@ const AppDetail = (props) => {
                     <div className='app-text'>
                        <p className='app-description'>{props.description}</p>
                        <p className='app-client'>Réalisé en {props.teamtype} pour un client {props.clienttype}.</p>  
-                       <p className='app-stack'>Stack utilisée {props.stack}</p>
+                       <p className='app-stack'>Stack utilisée : {props.stack}</p>
                     </div>
                 </div> 
             </div>              
