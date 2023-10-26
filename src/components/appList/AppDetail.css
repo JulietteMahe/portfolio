@@ -1,21 +1,25 @@
 .AppDetail {
-    width: 70vw;
-    height: 78vh;
+    width: 70%;
+    height: 80vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: var(--main-color-background);
+    align-items: center;
+    background-color: var(-content-color-background);
     border-radius: 5px;
-    margin: 25px;
-    margin-bottom: 40px;;
-    padding: 15px;
+    border : 0.5px var(--main-color-text);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 1rem;
     object-fit: contain;   
 }
 
-.AppDetail:hover {
+.AppDetail:hover {    
+    background-color: var(--content-color-background-hover);
     box-shadow: -4px 4px 8px 3px var(--main-color-text);
     border-radius: 5px; 
 }
+
 
 .firstBox {
     width: 60%;
@@ -23,24 +27,33 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 25px;
+    padding-top: 1rem;
 }
 
 .mainImgContainer {
-    max-width: 80%;
-    height: 62%;
+    width: 100%;
+    height: 50%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
     object-fit: contain;
-    margin: 20px;
+    margin: 0.5rem;
+}
+
+.mainImgA {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    object-fit: contain;
+    
 }
 
 .mainImg {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
+    width: auto;
+    max-width: 80%;
+    height: 100%;
 }
 
 .secondBox {
@@ -51,7 +64,6 @@
     align-items: center;
     justify-content: center;
     object-fit: contain;
-    padding-top: 25px;
 }
 
 .underBox {
@@ -86,12 +98,12 @@
     height: 85%;
     width: auto;    
     object-fit: contain; 
-    margin: 10px;
+    margin: 0.5rem;
 }
 
 .text-content {
-    width: 100%;
-    height: 50%;
+    width: 80%;
+    height: 45%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,26 +113,44 @@
 .cardTitle {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    width: 80%;
+    justify-content: left;
+    width: 100%;
+    height: 20%;
 }
 
 .app-name {
     font-family: var(--text-font);
     color: var(--main-color-text);
     font-size: 16px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin: 0.75rem;
+    height: 100%;
+    width: 55%;
+}
+
+.voirCode{
+    width: 35%;
+    font-family: var(--text-font);
+    color: var(--main-color-text);
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.githubLogoA {
+    height: 100%;
+    width: 10%;
 }
 
 .githubLogo {
-    max-height: 15px;
-    max-width: 15px;
-    margin-left: 20px;
-    margin-top: 15px;
+    max-height: 0.75rem;
+    max-width: 0.75rem;
+    margin-top: 1rem;
+    margin-left: 0.25rem;
 }
 .app-text {
-    width: 80%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: justified;
@@ -128,275 +158,85 @@
     font-family: var(--text-font);
     color: var(--main-color-text);
     font-size: 12px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    margin: 0.5rem;
+    
 }
 .app-description {
-  margin: 5px;
+    height: auto;
+    margin: 5px;
 }
 
 .app-client {
+    height: auto;
     margin: 5px;
 }
 
 .app-stack {
+    height: auto;
     margin: 5px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 299px) {
+
     .AppDetail {
-        width: 75vw;
-        height: 80vh;
+        width: 85vw;
+        height: 88vh;
         flex-direction: column;
         margin-top: 25px;
         margin-bottom: 40px;
-        padding-bottom: 20px;
+        padding-bottom: 1rem;
+        background-color: var(--content-color-background-hover);
+        box-shadow: -4px 4px 8px 3px var(--main-color-text);
+        border-radius: 5px; 
+    }
+
+    .text-content{
+        height: 48%;
+        width: 92%;
+    }
+
+    .mainImgContainer{
+        height: 52%;
+        max-width: 90%;
+    }
+
+    .mainImgA{
+        height: 90%;
     }
 
     .firstBox {
         width: 100%;
-        height: 70%;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-    }
-
-    .mainImgContainer {
-        width: 90%;
-        height: auto;
-        margin: 10px;
+        height: 85%;
+        padding-top: 0rem;
+        padding-bottom: 0.75rem;
+        margin: 0px;
     }
 
     .secondBox {
         width: 100%;
-        padding-top: 5px;
-    }
-    
-    .underBox {
-        flex-direction: row;
-    }
-
-    .topRow {
-        width: 100%;
-        height: 50%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: right;
-        margin: 0px;
-    }
-    
-    .bottomRow {
-        width: 100%;
-        height: 50%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: left;
-        margin: 0px;
-    }
-
-    .app-secondary-img {
-        height: auto;
-        max-width: 40%;
-        margin: 5px;
-    }
-
-    .app-name {
-        font-size: 12px;
-        margin-bottom: 5px;
-        margin-top: 10px;
-    }
-
-    .githubLogo {
-        margin-left: 10px;
-        margin-top: 10px;
-    }
-    
-    .app-text {
-        width: 100%;
-        font-size: 10px;
-        margin: 5px;
-    }
-}
-
-@media screen and (min-width: 376px) and (max-width: 393px) {
-    .AppDetail {
-        width: 75vw;
-        height: 75vh;
-        flex-direction: column;
-        margin-top: 25px;
-        margin-bottom: 40px;
-        padding-bottom: 20px;
-    }
-
-    .firstBox {
-        width: 100%;
-        height: 70%;
-        padding-top: 10px;
-    }
-
-    .mainImgContainer {
-        width: 90%;
-        height: auto;
-        margin: 10px;
-    }
-
-    .secondBox {
-        width: 100%;
-        padding-top: 0px;
-    }
-    
-    .underBox {
-        flex-direction: row;
-    }
-
-    .topRow {
-        width: 100%;
-        height: 50%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: right;
-        margin: 0px;
-    }
-    
-    .bottomRow {
-        width: 100%;
-        height: 50%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: left;
-        margin: 0px;
-    }
-
-    .app-secondary-img {
-        height: auto;
-        max-width: 40%;
-        margin: 5px;
-    }
-
-    .app-name {
-        font-size: 16px;
+        height: 40px;
+        margin-top: 5px;
         margin-bottom: 10px;
-        margin-top: 10px;
-    }
-
-    .githubLogo {
-        max-height: 20px;
-        max-width: 20px;
-        margin-left: 20px;
-        margin-top: 15px;
-    }
-    
-    .app-text {
-        width: 100%;
-        font-size: 12px;
-        margin: 12px;
-    }
-}
-
-@media screen and (min-width: 394px) and (max-width: 539px) {
-    .AppDetail {
-        width: 75vw;
-        height: 75vh;
+        display: none;
         flex-direction: column;
-        margin-top: 25px;
-        margin-bottom: 40px;
-        padding-bottom: 20px;
+    }
+    .cardTitle{
+        height: 30px;
     }
 
-    .firstBox {
-        width: 100%;
-        height: 75%;
-        padding-top: 10px;
-    }
-
-    .secondBox {
-        width: 100%;
-        padding-top: 0px;
+    .voirCode{
+        display: none
     }
     
     .underBox {
-        flex-direction: row;
-    }
-
-    .topRow {
-        width: 100%;
-        height: 50%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: right;
-        margin: 0px;
-    }
-    
-    .bottomRow {
-        width: 100%;
-        height: 50%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: left;
-        margin: 0px;
-    }
-
-    .app-secondary-img {
-        height: auto;
-        max-width: 40%;
-        margin: 10px;
-    }
-
-    .app-name {
-        font-size: 18px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
-
-    .githubLogo {
-        max-height: 20px;
-        max-width: 20px;
-        margin-left: 20px;
-        margin-top: 15px;
-    }
-    
-    .app-text {
-        width: 100%;
-        font-size: 12px;
-        margin: 12px;
-    }
-}
-
-@media screen and (min-width: 540px)and (max-width: 719px) {
-    .AppDetail {
-        width: 75vw;
-        height: 84vh;
         flex-direction: column;
-        margin-top: 25px;
-        margin-bottom: 40px;
-        padding-bottom: 20px;
-    }
-
-    .firstBox {
-        width: 100%;
-        height: 55%;
-        padding-top: 10px;
-    }
-
-    .secondBox {
-        width: 100%;
-        height: 35%;
-        margin-top: 45px;
-    }
-    
-    .underBox {
-        flex-direction: row;
+        width: 80%;
+        height: 90%;
     }
 
     .topRow {
         width: 50%;
-        height: 50%;
+        height: 40%;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -406,7 +246,7 @@
     .bottomRow {
         width: 50%;
         height: 50%;
-        display: flex;
+        display: none;
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
@@ -414,191 +254,446 @@
 
     .app-secondary-img {
         height: auto;
-        max-width: 40%;
+        max-height: 100px;
+        max-width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 5px;
     }
 
     .app-name {
         font-size: 16px;
-        margin-bottom: 7px;
-        margin-top: 10px;
+        margin-bottom: 2px;
+        margin-top: 2px;
+        margin-left: 5px;
+        width: 70%;
     }
 
     .githubLogo {
-        max-height: 20px;
-        max-width: 20px;
-        margin-left: 20px;
-        margin-top: 15px;
+        max-height: 1rem;
+        max-width: 1rem;
+        margin-left: 1rem;
+        margin-top: 0.25rem;
+    }
+    
+    .app-text {
+        width: 100%;
+        font-size: 9px;
+        margin: 0px;
+        padding-bottom: 5px;
+        text-align: justify;
+        text-align-last: left;
+    }
+
+    .app-description{
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .app-client{
+        margin: 0px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .app-stack{
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 520px) {
+    .AppDetail {
+        width: 75vw;
+        height: 88vh;
+        flex-direction: column;
+        margin-top: 25px;
+        margin-bottom: 40px;
+        padding-bottom: 1rem;
+        background-color: var(--content-color-background-hover);
+        box-shadow: -4px 4px 8px 3px var(--main-color-text);
+        border-radius: 5px; 
+    }
+
+    .text-content{
+        height: 48%;
+    }
+
+    .mainImgContainer{
+        height: 52%;
+        max-width: 90%;
+    }
+
+    .mainImgA{
+        height: 90%;
+    }
+
+    .firstBox {
+        width: 100%;
+        height: 85%;
+        padding-top: 0rem;
+        padding-bottom: 0.75rem;
+        margin: 0px;
+    }
+
+    .secondBox {
+        width: 100%;
+        height: 40px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        display: none;
+        flex-direction: column;
+    }
+    .cardTitle{
+        height: 30px;
+    }
+
+    .voirCode{
+        display: none
+    }
+    
+    .underBox {
+        flex-direction: column;
+        width: 80%;
+        height: 90%;
+    }
+
+    .topRow {
+        width: 50%;
+        height: 40%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .bottomRow {
+        width: 50%;
+        height: 50%;
+        display: none;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .app-secondary-img {
+        height: auto;
+        max-height: 100px;
+        max-width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 5px;
+    }
+
+    .app-name {
+        font-size: 16px;
+        margin-bottom: 2px;
+        margin-top: 2px;
+        margin-left: 5px;
+        width: 70%;
+    }
+
+    .githubLogo {
+        max-height: 1rem;
+        max-width: 1rem;
+        margin-left: 1rem;
+        margin-top: 0.25rem;
     }
     
     .app-text {
         width: 100%;
         font-size: 10px;
         margin: 7px;
+        margin-top: 5px;
+        padding-bottom: 5px;
+        text-align: justify;
+        text-align-last: left;
+    }
+
+    .app-description{
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .app-client{
+        margin: 0px;
+        margin-left: 5px;
+    }
+
+    .app-stack{
+        margin-top: 0px;
+        margin-bottom: 15px;
     }
 }
 
-@media screen and (min-width: 720px) and (max-width: 1023px) {
-   .AppDetail {
+
+@media screen and (min-width: 521px) and (max-width: 619px) {
+    .AppDetail {
         width: 75vw;
-        height: 82vh;
+        height: 84vh;
         flex-direction: column;
         margin-top: 25px;
         margin-bottom: 40px;
-        padding-bottom: 20px;
+        padding-bottom: 1rem;
+        background-color: var(--content-color-background-hover);
+        box-shadow: -4px 4px 8px 3px var(--main-color-text);
+        border-radius: 5px; 
+    }
+
+    .text-content{
+        height: 55%;
+    }
+
+    .mainImgContainer{
+        height: 52%;
+        padding-bottom: 5px;
     }
 
     .firstBox {
         width: 100%;
-        height: 80%;
-        padding-top: 10px;
-    }
-
-    .secondBox {
-        width: 100%;
-        padding-top: 0px;
-    }
-    
-    .underBox {
-        flex-direction: row;
-    }
-
-    .app-secondary-img {
-        height: auto;
-        max-width: 40%;
-    }
-
-    .app-name {
-        font-size: 18px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
-
-    .githubLogo {
-        max-height: 20px;
-        max-width: 20px;
-        margin-left: 20px;
-        margin-top: 15px;
-    }
-    
-    .app-text {
-        width: 100%;
-        font-size: 14px;
-        margin: 15px;
-    }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1078px) {
-    .firstBox {
-        padding-top: 5px;
-    }
-
-    .mainImgContainer {
-        width: 70%;
-        margin: 5px;
-    }
-
-    .secondBox {
-        width: 35%;
-        padding-top: 5px;
-    }
-}
-
-@media screen and (min-width: 1079px) and (max-width: 1179px) {
-    .AppDetail {
-        width: 75vw;
-        height: 75vh;
-        flex-direction: column;
-        justify-content: flex-start;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        padding-bottom: 20px;
-    }
-
-    .firstBox {
-        width: 100%;
-        height: 50%;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
+        height: 60%;
+        padding-top: 0.5rem;
     }
 
     .secondBox {
         width: 100%;
         height: 40%;
-        padding-top: 60px;
-        flex-direction: column;
+        margin-top: 0px;
+        padding-top: 25px;
+        margin-bottom: 0px;
+    }
+    .cardTitle{
+        height: 40px;
     }
 
-    .mainImgContainer {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        object-fit: contain;
-        margin: 20px;
-        padding-top: 20px;
-    }
-    
-    .mainImg {
-        width: 700px;
-        height: auto;
-        max-height: 560px;
-        object-fit: contain;
+    .voirCode{
+        visibility: hidden;
     }
     
     .underBox {
-        flex-direction: column;
+        flex-direction: row;
+        width: 80%;
+    }
+
+    .topRow {
+        width: 50%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
+    }
+    
+    .bottomRow {
+        width: 50%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
     }
 
     .app-secondary-img {
         height: auto;
-        max-height: 90%;
-    }
-
-    .text-content {
-        width: 90%;
-        height: auto;
-        margin-bottom: 40px;
-        padding-top: 50px;
+        max-height: 100%;
     }
 
     .app-name {
-        font-size: 28px;
-        margin-bottom: 10px;
-        margin-top: 10px;
+        font-size: 16px;
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+        margin-left: 5px;
+        width: 40%;
     }
 
     .githubLogo {
-        max-height: 20px;
-        max-width: 20px;
-        margin-left: 20px;
-        margin-top: 18px;
+        max-height: 1rem;
+        max-width: 1rem;
+        margin-left: 1rem;
+        margin-top: 0.25rem;
     }
     
     .app-text {
         width: 100%;
-        font-size: 20px;
-        margin: 15px;
-        margin-bottom: 20px;
+        font-size: 10px;
+        margin: 7px;
+        margin-top: 0rem;
+        padding-bottom: 5px;
+    }
+
+    .app-client{
+        margin: 0px;
+        margin-left: 5px;
+    }
+
+    .app-stack{
+        margin-top: 0rem;
+        margin-bottom: 5px;
+    }
+
+    .app-description{
+        margin-top: 0rem;
+        margin-bottom: 0rem;
     }
 }
 
-@media screen and (min-width: 1180px) and (max-width: 1350px) {
-    .firstBox {
-        padding-top: 5px;
+@media screen and (min-width: 620px)and (max-width: 700px) {
+    .AppDetail {
+        width: 75vw;
+        height: 84vh;
+        flex-direction: column;
+        margin-top: 25px;
+        margin-bottom: 40px;
+        padding-bottom: 1rem;
+        background-color: var(--content-color-background-hover);
+        box-shadow: -4px 4px 8px 3px var(--main-color-text);
+        border-radius: 5px; 
     }
 
-    .mainImgContainer {
-        width: 70%;
-        margin: 5px;
+    .text-content{
+        height: 55%;
+    }
+
+    .mainImgContainer{
+        height: 65%;
+        margin-bottom: 10px;
+    }
+
+    .firstBox {
+        width: 100%;
+        height: 60%;
+        padding-top: 0.5rem;
+        margin-top: 0.5rem;
     }
 
     .secondBox {
-        width: 35%;
-        padding-top: 5px;
+        width: 100%;
+        height: 35%;
+        margin-top: 35px;
+        margin-bottom: 5px;
     }
+    .cardTitle{
+        height: 30px;
+    }
+
+    .voirCode{
+        margin-top: 0rem;
+    }
+    
+    .underBox {
+        flex-direction: row;
+        width: 80%;
+    }
+
+    .topRow {
+        width: 50%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .bottomRow {
+        width: 50%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .app-secondary-img {
+        height: auto;
+        max-height: 95%;
+        max-width: 40%;
+    }
+
+    .app-name {
+        font-size: 16px;
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+        margin-left: 0.25rem;
+    }
+
+    .githubLogo {
+        max-height: 1rem;
+        max-width: 1rem;
+        margin-left: 1rem;
+        margin-top: 0.25rem;
+    }
+    
+    .app-text {
+        width: 100%;
+        font-size: 10px;
+        margin: 7px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 5px;
+    }
+
+    .app-client{
+        margin: 0px;
+        margin-left: 5px;
+    }
+
+    .app-stack{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .app-description{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (min-width: 701px)and (max-width: 880px) {
+    .app-name {
+        margin: 0rem;
+        margin-left: 0px;
+        margin-top: 0.5rem;
+        font-size: 12px;
+    }
+    .voirCode{
+        width: 35%;
+        font-family: var(--text-font);
+        color: var(--main-color-text);
+        font-size: 8px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.5rem;
+    }
+
+    .app-text {
+        font-size: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .githubLogo {
+        max-height: 1rem;
+        max-width: 1rem;
+        margin-right: 1rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .app-client{
+        margin: 0px;
+        margin-left: 0px;
+    }
+
+    .app-stack{
+        margin-left: 0px;
+    }
+
+    .app-description{
+        margin-left: 0px;
+    }
+    
 }

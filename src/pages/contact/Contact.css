@@ -11,7 +11,7 @@
 
 .contactCard {
     width: 60%;
-    height: 60%;
+    height: 75%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,12 +29,11 @@
     color: var(--main-color-text);
     font-size: 16px;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .linkedinButton {
     width: 300px;
-    height: 80px;
+    height: 60px;
     display: flex;
     flex-direction: column; 
     align-items: center;
@@ -55,9 +54,10 @@
     height: 100%;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: var(--darker-color-background);
-    padding-top: 33px;
 }
 
 .linkedinLink:hover {
@@ -71,13 +71,44 @@
     margin-left: 10px;
 }
 
-@media screen and (max-width: 390px) {
-    .contactCard {
-        width: 85%;
+@media screen and (max-width: 309px) {
+
+    .Contact {
+        min-width: 200px;
+        max-width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--main-color-background);
+        background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
     }
+
+    .contactCard {
+        width: 93%;
+    }
+
+    .linkedinButton {
+        width: 150px;
+        font-size: 9px;
+    }
+
 }
 
-@media screen and (min-width: 391px) and (max-width: 767px){
+@media screen and (min-width: 310px) and (max-width: 410px) {
+    .contactCard {
+        width: 90%;
+    }
+
+    .linkedinButton {
+        width: 180px;
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (min-width: 411px) and (max-width: 767px){
     .contactCard {
         width: 85%;
     }

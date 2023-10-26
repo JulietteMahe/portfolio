@@ -9,21 +9,22 @@ const AppDetail = (props) => {
         <div className="AppDetail">
             <div className="firstBox">
                 <div className="mainImgContainer">
-                    <a href={props.netlify}>
+                    <a className="mainImgA" href={props.netlify}>
                        <img className="mainImg" src={props.globalpic1} alt={props.name} />
                     </a>
                 </div>
                 <div className='text-content'>  
                     <div className='cardTitle'>
                        <p className='app-name'>{props.name}</p>
-                       <a href={props.github}>
+                       <p className ="voirCode">Voir le code -> </p>
+                       <a className="githubLogoA" href={props.github}>
                           <img className="githubLogo" src={Logo} alt="Github link"></img>
                        </a>
                     </div> 
                     <div className='app-text'>
                        <p className='app-description'>{props.description}</p>
                        <p className='app-client'>Réalisé en {props.teamtype} pour un client {props.clienttype}.</p>  
-                       <p className='app-stack'>Stack utilisée {props.stack}</p>
+                       <p className='app-stack'>Stack utilisée : {props.stack}</p>
                     </div>
                 </div> 
             </div>              

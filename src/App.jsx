@@ -12,6 +12,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 function App() {
   return (
     <div className="App">
+      <Nav />
       <Routes>
         <Route exact path='/' element={<Home />}/>
         <Route path='/about-me' element={<AboutMe />}/>
@@ -19,7 +20,7 @@ function App() {
         <Route path='/cv' element={<CV />}/>
         <Route path='/contact' element={<Contact />}/>
       </ Routes>
-      <Nav />
+      
     </div>
   );
 }

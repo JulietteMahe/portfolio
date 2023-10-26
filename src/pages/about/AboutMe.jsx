@@ -23,11 +23,12 @@ function AboutMe() {
 
           <div className="flipCardBack">
             <div className="storyInfos">
-              <p className="storyText">Après 10 années dans le commerce dont 5 en tant que manager, j'ai choisi de me réinventer dans le développement web 💻 </p>
-              <p className="storyText">Le but? Etancher ma soif d'apprendre 🧠 et trouver un domaine en constante évolution où l'esprit d'équipe et l'envie de se dépasser sont les clés du succès. </p>
-              <p className="storyText">J'ai alors intégré le cursus Web dev de la Wild code school en remote pour 5 mois de folie qui s'achèvent bientôt 🎓 : une très belle expérience sur le plan professionnel et humain! </p>
-              <p className="storyText">L'heure est donc venue de mettre mes compétences nouvellement acquises à votre service 🎇 Je recherche donc un stage démarrant à partir de mi-avril, de 4 à 6 mois. Rennaise d'origine, je suis aussi intéressée par Paris et Nantes: en effet, le Remote , même partiel, ne me fait pas peur ! </p>
-              <p className="storyText">Trouvez plus d'infos à la rubrique CV 📝 !</p>
+              <p className="storyText">Après 10 années dans le commerce dont 5 en tant que manager, j'ai choisi, il y a 2 ans, de me reconvertir dans le développement web <br/>
+              Animée par ma soif d'apprendre  et l'envie de me dépasser chaque jour, je suis passée par une formation en full remote afin d'expérimenter le dev en mode projet et d'acquérir des automatismes. <br/>
+              A la suite de cette formation j'ai pû valider mes compétences par le biais d'un titre RNCP, venu clôturer également une période de stage chez Mailmeteor <br/>
+              Ayant connu des expériences diverses, du développement web au développement éditique (CCM), je sais après cette période de découverte quel type de structure et de poste je recherche désormais afin de continuer à m'épanouir. <br/>
+              Je souhaite donc aujourd'hui retrouver le développement web, idéalement au sein de projets à visée sociétale . <br/>
+              Trouvez plus d'infos à la rubrique CV 📝 !</p>
             </div>
           </div>
 
