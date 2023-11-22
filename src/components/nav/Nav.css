@@ -35,7 +35,6 @@
 .navLink:hover {
     color: var(--main-color-text);
     text-shadow: 0 0 5px #fffde7, 0 0 25px #fffde7, 0 0 50px #fffde7, 0 0 200px #fffde7;
-    margin: 10px;
     font-family: var(--text-font);
     text-decoration: none;
 }
